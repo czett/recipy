@@ -1,1 +1,28 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="site-header">Home</h1>
+
+<div class="recipes-grid">
+    {% for i in range(13) %}
+
+    <div class="recipe">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="shade"></div>
+        </div>
+        <div class="info">
+            <div class="name">Randm ahh food</div>
+            <div class="creator"><span class="material-symbols-outlined">face</span>puuki</div>
+        </div>
+        <div class="stats">
+            <div class="time"><span class="material-symbols-outlined">schedule</span>35 min</div>
+            <div class="difficulty"><span class="material-symbols-outlined">trending_up</span>easy</div>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+{% endblock content %}
